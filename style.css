@@ -1,0 +1,214 @@
+:root {
+    --cor-primaria: #6F4E37;       
+    --cor-primaria-escura: #5c402c; 
+    --cor-secundaria: #ECDBBA;     
+    --cor-texto: #333;
+    --cor-fundo: #f9f9f9;
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem 0;
+    background-color: var(--cor-primaria-escura);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-comprar:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button[type="submit"], #checkout-button {
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+.cart-toggle {
+    background-color: #ECDBBA;
+    color: #333;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-container {
+    display: none;
+    background-color: white;
+    border: 2px solid var(--cor-primaria);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: fadeIn 0.3s;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#cart-items button {
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}

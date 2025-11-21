@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café do Dev - Menu Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nosso Menu</h1>
+        <button id="cart-button" class="cart-toggle">🛒 Carrinho (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Menu</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="cart" class="cart-container">
+        <h2>Seu Carrinho</h2>
+        <ul id="cart-items">
+        </ul>
+        <div class="cart-footer">
+            <p>Total: R$ <span id="cart-total">0,00</span></p>
+            <button id="checkout-button">Finalizar Pedido</button>
+        </div>
+    </section>
+
+    <main>
+        <h2 style="text-align: center; margin-bottom: 20px;">Nossas Delícias</h2>
+        
+        <section class="container-produtos">
+            <article class="card">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Café Espresso">
+                <h3>Espresso Duplo</h3>
+                <p>Intenso e encorpado.</p>
+                <p><strong>R$ 8,00</strong></p> 
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+            <article class="card">
+                <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Com espuma cremosa e canela.</p>
+                <p><strong>R$ 12,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+            <article class="card">
+                <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bolo de Chocolate">
+                <h3>Bolo de Chocolate</h3>
+                <p>Fatia generosa com calda.</p>
+                <p><strong>R$ 15,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+            <article class="card">
+                <img src="https://images.pexels.com/photos/3724/food-morning-breakfast-orange-juice.jpg?auto=compress&cs=tinysrgb&w=400" alt="Croissant">
+                <h3>Croissant da Casa</h3>
+                <p>Manteigado e crocante.</p>
+                <p><strong>R$ 10,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+
+            <article class="card">
+                <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mocaccino">
+                <h3>Mocaccino</h3>
+                <p>Espresso, leite e chocolate.</p>
+                <p><strong>R$ 14,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+            <article class="card">
+                <img src="https://essareceitafunciona.com.br/wp-content/uploads/2022/07/Pao-de-queijo-Essa-Receita-Funciona-9.jpg" alt="Pão de Queijo">
+                <h3>Pão de Queijo (6un)</h3>
+                <p>Tradicional mineiro quentinho.</p>
+                <p><strong>R$ 12,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+            <article class="card">
+                <img src="https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Café Gelado">
+                <h3>Iced Coffee</h3>
+                <p>Refrescante com caramelo.</p>
+                <p><strong>R$ 16,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+
+            <article class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.1Ars9_TRn3zBkbUIyMCmXQHaE8?pid=Api&P=0&h=180" alt="Torta de Limão">
+                <h3>Torta de Limão</h3>
+                <p>Doce e azedinho na medida.</p>
+                <p><strong>R$ 14,00</strong></p>
+                <a href="#" class="btn-comprar">Adicionar</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Café do Dev</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
